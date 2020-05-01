@@ -1,13 +1,24 @@
 # 環境構築
 
-* install composer
+## install composer
+
+### Mac
+
+```
+brew install composer
+```
+
+### Linux
+
+* To be written
+
+## install mob_docker
 
 ```
 composer install
 cp .env.example .env
 php artisan key:generate
 ```
-
 
 ## 実行
 

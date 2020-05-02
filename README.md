@@ -60,7 +60,7 @@
 #### question issueの解決方法
 
 * Learnings.mdに見出しを作って答えを書き込む
-* PRを作ってquestionを作った人にレビューリクエストする
+* PR(Pull Request)を作ってquestionを作った人にレビューリクエストする
 * questionを作った人が納得したらapproveする
 * approveしたら誰でもいいのでmergeしてissueをclosedにする
 

@@ -94,7 +94,7 @@ docker build . -t mob_composer
 をしておく。実行するときは、
 
 ```
-docker-compose up -d
+docker-compose up
 ```
 
 とすると、`localhost:8080`でアプリにアクセスできる。ただし、実行時に`composer install`するのでしばらく待たないとブラウザからは確認できない。

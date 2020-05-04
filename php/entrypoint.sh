@@ -1,5 +1,5 @@
 #/bin/bash
-alias composer="php composer.phar"
 cd /src
-composer install
+../composer.phar install
+echo "Hello Mob Laravel is starting..."
 php artisan serve --host=0.0.0.0 --port=8000

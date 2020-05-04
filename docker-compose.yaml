@@ -1,10 +1,8 @@
 version: '3'
 services:
     laravel:
-        build:
-            context: ./Laravel
-            dockerfile: Dockerfile
-        container_name: composer
+        image: mob_composer:latest
+        container_name: hello_comp
         ports:
             - 8080:8000
         volumes:

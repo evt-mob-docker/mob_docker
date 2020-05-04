@@ -14,12 +14,12 @@
     - [install ZenHub Chrome extension](#install-zenhub-chrome-extension)
     - [install VSCode & LiveShare Extension](#install-vscode--liveshare-extension)
     - [実行方法](#%e5%ae%9f%e8%a1%8c%e6%96%b9%e6%b3%95)
+  - [やったこと](#%e3%82%84%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8)
     - [install composer (Optional)](#install-composer-optional)
       - [Mac](#mac)
       - [Linux](#linux)
     - [install mob_laravel](#install-moblaravel)
     - [mob_laravel 実行](#moblaravel-%e5%ae%9f%e8%a1%8c)
-  - [やったこと](#%e3%82%84%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8)
 
 ## 進め方
 
@@ -85,15 +85,29 @@
 
 ### 実行方法
 
-プロジェクトルートに置いて、
+プロジェクトルートにおいて、
+
+```
+docker build . -t mob_composer
+```
+
+をしておく。実行するときは、
 
 ```
 docker-compose up -d
 ```
 
-とすると、`localhost:8000`でアプリにアクセスできる。
+とすると、`localhost:8080`でアプリにアクセスできる。ただし、実行時に`composer install`するのでしばらく待たないとブラウザからは確認できない。
 
 アプリのソースコードは`php`以下にある。
+
+## やったこと
+
+* (誰か一人でOK) `laravel`コマンドをインストール
+* `laravel new`
+* `evt-mob-docker` Organization追加した
+* `slack` との連携を追加
+* `to be continued`
 
 ### install composer (Optional)
 
@@ -121,10 +135,3 @@ php artisan key:generate
 php artisan serve
 ```
 
-## やったこと
-
-* (誰か一人でOK) `laravel`コマンドをインストール
-* `laravel new`
-* `evt-mob-docker` Organization追加した
-* `slack` との連携を追加
-* `to be continued`

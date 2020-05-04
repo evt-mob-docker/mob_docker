@@ -1,0 +1,14 @@
+version: '3'
+services:
+    laravel:
+        build:
+            context: ./Laravel
+            dockerfile: Dockerfile
+        container_name: composer
+        ports:
+            - 8080:8000
+        volumes:
+            - ./php:/src
+        command: sh /src/entrypoint.sh
+
+        

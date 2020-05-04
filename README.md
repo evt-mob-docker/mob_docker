@@ -13,7 +13,8 @@
   - [環境構築](#%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89)
     - [install ZenHub Chrome extension](#install-zenhub-chrome-extension)
     - [install VSCode & LiveShare Extension](#install-vscode--liveshare-extension)
-    - [install composer](#install-composer)
+    - [実行方法](#%e5%ae%9f%e8%a1%8c%e6%96%b9%e6%b3%95)
+    - [install composer (Optional)](#install-composer-optional)
       - [Mac](#mac)
       - [Linux](#linux)
     - [install mob_laravel](#install-moblaravel)
@@ -82,7 +83,19 @@
 * [VS Code](https://code.visualstudio.com/)
 * LiveShare Extension をインストールする
 
-### install composer
+### 実行方法
+
+プロジェクトルートに置いて、
+
+```
+docker-compose up -d
+```
+
+とすると、`localhost:8000`でアプリにアクセスできる。
+
+アプリのソースコードは`php`以下にある。
+
+### install composer (Optional)
 
 #### Mac
 

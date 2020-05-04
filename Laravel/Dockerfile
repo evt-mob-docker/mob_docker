@@ -4,4 +4,9 @@ MAINTAINER nobishino <ksmith@example.com>
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
-RUN alias composer="/composer.phar"
+
+EXPOSE 8000
+
+CMD alias composer="php /composer.phar"
+
+#mountも含める
